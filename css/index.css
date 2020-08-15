@@ -199,7 +199,8 @@ nav a {
     margin: 1rem 0 1.5rem 0;
 }
 
-/* Top Content */
+/* index.html
+Top Content */
 
 .top-content {
     display: flex;
@@ -214,7 +215,8 @@ nav a {
     padding-bottom: 20px;
 }
 
-/* Middle Content */
+/* index.html
+Middle Content */
 
 .middle-content {
     margin-bottom: 20px;
@@ -285,7 +287,8 @@ nav a {
     background: dodgerblue;
 }
 
-/* Bottom Content */
+/*index.html
+ Bottom Content */
 
 .bottom-content {
     display: flex;
@@ -301,20 +304,24 @@ nav a {
     padding-right: 0;
 }
 
-/* About.html */
+/*about.html
+ Top Content */
 
 .about {
     margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
     border-bottom: 1px dashed black;
 }
+
+/* about.html
+Middle Content */
 
 .strategy-howwework,
 .places-collab {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin: 3rem 0;
 }
 
 .strategy-howwework h2,
@@ -344,7 +351,7 @@ nav a {
 
 .learn-more-button {
     width: 33.33%;
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
     text-align: center;
@@ -360,6 +367,7 @@ nav a {
 /* Footer */
 
 footer {
+    margin-top: 3rem;
     width: 100%;
     background: black;
 }
