@@ -1,75 +1,206 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* 
+    Resets
+
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
+/* General */
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
+main {
+    margin: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1.75rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: orangered;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+/* Header */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0 2.5rem 0;
+    align-items: baseline;
+}
+
+nav a {
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: black;
+    padding: 0 3rem;
+}
+
+.header-image {
+    margin: 1rem 0 1.5rem 0;
+}
+
+/* index.html
+Top Content */
 
 .top-content {
     display: flex;
@@ -81,9 +212,11 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
+
+/* index.html
+Middle Content */
 
 .middle-content {
     margin-bottom: 20px;
@@ -110,7 +243,52 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
+.middle-content .boxes .box:first-child {
+    background: teal;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background: gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background: dodgerblue;
+}
+
+/*index.html
+ Bottom Content */
 
 .bottom-content {
     display: flex;
@@ -126,7 +304,70 @@ p {
     padding-right: 0;
 }
 
+/*about.html
+ Top Content */
+
+.about {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
+    border-bottom: 1px dashed black;
+}
+
+/* about.html
+Middle Content */
+
+.strategy-howwework,
+.places-collab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.strategy-howwework h2,
+.places-collab h2 {
+    margin: 1rem 0;
+}
+
+.strategy,
+.howwework {
+    border-bottom: 1px dashed black;
+}
+
+.strategy,
+.places {
+    margin-right: 1rem;
+}
+
+.howwework,
+.collab {
+    margin-left: 1rem;
+}
+
+.places,
+.collab {
+    border-bottom: 1px dashed black;
+}
+
+.learn-more-button {
+    width: 33.33%;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.learn-more-button:hover {
+    background: black;
+    color: white;
+}
+
+/* Footer */
+
 footer {
+    margin-top: 3rem;
     width: 100%;
     background: black;
 }
